@@ -1,0 +1,594 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>GTVT</title>
+<meta name="viewport" content="width=device-width">
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<!--	<link rel="stylesheet" href="css/bootstrap.min.css">-->
+	
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!--
+    <link rel="stylesheet" href="css/style.scss">
+	<link rel="stylesheet" href="css/responsive.scss">
+-->
+
+</head>
+
+<body>
+<header class="cd-auto-hide-header">
+		<div class="d-block d-lg-none header-mb">
+			<form class="" style="z-index: 15" action="" method="GET">
+				<div class="position-absolute bg-white w-100" style="top:100%; left: 0; z-index:3">
+					<div class="collapse " id="collapseExample" style="">
+						<div class="input-group dropdown-item bg-white pb-3 px-3">
+							<input type="hidden" name="mod" value="archive">
+							<input type="hidden" name="act" value="search">
+							<input type="text" name="search" class="form-control shadow-none" placeholder="Tìm kiếm..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="bg-white d-flex py-2">
+				<div class="col-6 py-1 d-flex align-items-center">
+					<span class="show-menu-btn nav-mb-item">
+						<i class="fas fa-bars text-lightgray"></i>
+					</span>
+				</div>
+				<div class="col-6 d-flex align-items-center pl-0 justify-content-end">
+<!--
+					<button class="btn shadow-none text-secondary px-1 border-0 d-flex" >
+                          <i class="fas fa-search fs-20 "></i>
+                        </button>
+-->
+					<div class="search-form border-0">
+						<button type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample" class="btn search-form-btn"><i class="fas fa-search text-white"></i></button>
+					</div>
+					<div class="btn-icon-list d-flex pl-1">
+							<button class="btn-icon">
+								<i class="fab fa-twitter"></i>
+							</button>
+							<button class="btn-icon">
+								<i class="fab fa-facebook-f"></i>
+							</button>
+							<button class="btn-icon">
+								<i class="fab fa-youtube"></i>
+							</button>
+							<button class="btn-icon">
+								<i class="fas fa-user"></i>
+							</button>
+				  </div>
+				</div>
+			</div>
+			<div class="w-100 position-relative py-lg-3 p-3 bg-base text-nowrap" style="overflow-x: auto">
+				<ul class="d-flex nav-mb align-items-center">
+					<li>
+						<a href="" class="logo-font">
+							BÁCH KHOA THƯ VIỆN
+						</a>
+					</li>
+					<li class="nav-mb-item">
+						<button class="btn bg-white text-dark666 br-10"># Thơ ngôn tình</button>
+					</li>
+					<li class="nav-mb-item">
+						<button class="btn bg-white text-dark666 br-10"># Thơ ngôn tình</button>
+					</li>
+					<li class="nav-mb-item">
+						<button class="btn bg-white text-dark666 br-10"># Thơ ngôn tình</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+<!-- menu-mobile -->
+<div class="menu-mobile d-block d-lg-none">
+	<div class="d-flex align-items-center justify-content-between pt-2 bg-base">
+		<div class="position-absolute">
+			<label for="chk" class="hide-menu-btn fs-24 mb-0 pl-3">
+		        <i class="fas fa-times" style="font-size: 20px;"></i>
+		    </label>
+		</div>
+		<div class="d-flex align-items-center mx-auto px-0">
+                <a href="">
+					<img src="images/icon/logo.svg" alt="">
+				</a>
+        </div>
+	</div>
+	
+    <!-- search menu mobile -->
+    <form class="" style="z-index: 3" action="/?mod=archive&amp;act=search" method="GET">
+        <div class="input-group dropdown-item bg-base pb-3 px-3">
+            <input type="hidden" name="mod" value="archive">
+            <input type="hidden" name="act" value="search">
+            <input type="text" name="search" class="form-control shadow-none" placeholder="Tìm kiếm..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </form>
+    <!-- end search menu mobile -->
+    <!-- menu mobile -->
+	<nav class="navigation bg-base">
+    	<ul class="nav-list">
+    		<li class="dropdown-list">
+    			<div class="d-flex justify-content-between align-items-center">
+    				<a href="#" class="dropdown-list__
+									   title">Trag chu</a>
+    				<span><i class="fas fa-angle-down" style="font-size: 25px"></i></span>
+    			</div>
+    			<ul class="dropdown-list__menu">
+				    <li class="openlistnewsmn_mb">
+                        <a href="#">Gioi thieu</a>
+                    </li>
+    			</ul>
+    		</li>
+    		<li>xfd</li>
+    	</ul>
+    </nav>
+    <!-- end menu-mobile -->
+</div>
+<!-- menu-pc -->
+  <div class="w-100 d-none d-lg-block position-relative header-pc" >
+		<div class="w-1080 mx-auto align-items-center position-relative justify-content-between">
+			<div class="row align-items-center">
+				<div class="col-5 d-flex align-items-center">
+					<a><i class="fas fa-bars mr-3 pr-1 text-lightgray"></i></a>
+					<a href="" class="logo-font">
+						BÁCH KHOA THƯ VIỆN
+					</a>
+				</div>
+				<div class="col-7">
+					<div class="d-flex align-items-center">
+						<form action="" class="d-flex search-form justify-content-between w-100">
+							<input type="text" placeholder="Tìm kiếm" class="bg-transparent border-0">
+							<button type="submit" class="btn search-form-btn"><i class="fas fa-search text-white"></i></button>
+						</form>
+						<div class="btn-icon-list d-flex pl-1">
+							<button class="btn-icon">
+								<i class="fab fa-twitter"></i>
+							</button>
+							<button class="btn-icon">
+								<i class="fab fa-facebook-f"></i>
+							</button>
+							<button class="btn-icon">
+								<i class="fab fa-youtube"></i>
+							</button>
+							<button class="btn-icon">
+								<i class="fas fa-user"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+    </div>
+</header>
+	<div class="w-100 bg-base">
+		<div class="w-100 banner banner-index">
+			<div class="w-1080 mx-auto">
+				<div class="row justify-content-between align-items-center mx-0 mx-sm-n3">
+					<div class="col-12 col-lg-4 text-white">
+						<a href="" class="text-white fs-18">Trang chủ</a>
+						<p class="desc">Cuốn cẩm nang đáng tin cậy nhất trên internet</p>
+					</div>
+					<div class="col-lg-5 text-sm-right d-none d-lg-block">
+						<button class="btn bg-white text-dark666 br-10"># Thơ văn</button>
+						<button class="btn bg-white text-dark666"># Truyện kiếm hiệp</button>
+						<button class="btn bg-white text-dark666"># Lịch sử</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w-1140 bg-white mx-auto py-3 br-10 mb-4 px-3 px-lg-0 shadow">
+			<div class="w-1080 mx-auto py-4 d-flex justify-content-between flex-wrap bg-base my-1 br-10">
+                <div class="col-sm-8 px-xl-4 mx-auto">
+					<form action="" class="d-flex search-form justify-content-between w-100">
+                        <input type="text" placeholder="Tìm kiếm" class="bg-transparent border-0">
+                        <button type="submit" class="btn search-form-btn"><i class="fas fa-search text-white"></i></button>
+                    </form>
+				</div>
+			</div>
+			<div class="w-1080 mx-auto my-3">
+				<ul class="alphabet mb-4">
+					<a href="" class="alphabet-item">
+						a
+					</a>
+					<a href="" class="alphabet-item">
+						b
+					</a>
+					<a href="" class="alphabet-item">
+						c
+					</a>
+				</ul>
+				<div class="">
+					<p class="fs-18 text-dark333 pb-2 mb-1 ">Được tìm nhiều nhất</p>
+					<div class="row search-list">
+						<div class="col-6 col-sm-3 search-list-item">
+							<a href="#" class="d-flex"><span class=" block text-orange pr-2 mr-1">&#8226;</span>Nghệ thuật và Giải trí </a>
+						</div>
+						<div class="col-6 col-sm-3 search-list-item" >
+							<a href="#" class="d-flex"><span class=" block text-orange pr-2 mr-1">&#8226;</span>Nghệ thuật và Giải trí </a>
+						</div>
+						<div class="col-6 col-sm-3 search-list-item">
+							<a href="#" class="d-flex"><span class=" block text-orange pr-2 mr-1">&#8226;</span>Nghệ thuật và Giải trí </a>
+						</div>
+						<div class="col-6 col-sm-3 search-list-item">
+							<a href="#" class="d-flex"><span class=" block text-orange pr-2 mr-1">&#8226;</span>Nghệ thuật và Giải trí </a>
+						</div>
+						<div class="col-6 col-sm-3 search-list-item">
+							<a href="#" class="d-flex"><span class=" block text-orange pr-2 mr-1">&#8226;</span>Nghệ thuật và Giải trí </a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+		<div class="w-1140 bg-white mx-auto py-3 br-10 mt-lg-4 mt-3 px-3 px-lg-0 shadow">
+			<div class="w-1080 mx-auto">
+				<div class="">
+					<p class="fs-32 font-weight-bold text-orange d-block d-lg-none">Tác phẩm</p>
+					<div class="d-flex justify-content-between align-items-center bg-base mx-n3 mx-lg-0 px-sm-3 nav-custom overflow-auto ">
+						<p class="fs-32 font-weight-bold text-orange d-none d-lg-block">Tác phẩm</p>
+						<ul class="nav nav-pills mt-3 flex-nowrap" id="pills-tab" role="tablist">
+						  <li class="nav-item" role="presentation">
+							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><img class="img-white img-icon" src="images/icon/all-white.svg" alt=""> <img class="img-black img-icon" src="images/icon/all-black.svg" alt=""> Tất cả</a>
+						  </li>
+						  <li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><img class="img-white img-icon" src="images/icon/new-white.svg" alt=""> <img class="img-black img-icon" src="images/icon/new-black.svg" alt="">Mới nhất</a>
+						  </li>
+						  <li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><img class="img-white img-icon" src="images/icon/care-white.svg" alt=""> <img class="img-black img-icon" src="images/icon/care-black.svg" alt="">Quan tâm nhất</a>
+						  </li>
+							<li class="nav-item">
+								<a class="dropdown-toggle nav-link border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-icon" src="images/icon/type.svg" alt=""><span class="text-dark333">Thể loại</span></a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								  </div>
+							</li>
+							
+						</ul>
+					</div>
+					
+					<div class="tab-content" id="pills-tabContent">
+					    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							<div class="row">
+								<div class="col-sm-6 col-lg-4">
+									<a href="" class="comic-item">
+										<div class="comic-item-img">
+											<img src="images/image 43.png" alt="">
+										</div>
+										<div class="comic-item-detail">
+											<p class="comic-item-detail-name">Truyện dài Doremon full</p>
+											<p><span class="comic-item-detail-type">Truyện</span> - <span class="comic-item-detail-time">7h</span></p>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a href="" class="comic-item">
+										<div class="comic-item-img">
+											<img src="images/image 43.png" alt="">
+										</div>
+										<div class="comic-item-detail">
+											<p class="comic-item-detail-name">Truyện dài Doremon full</p>
+											<p><span class="comic-item-detail-type">Truyện</span> - <span class="comic-item-detail-time">7h</span></p>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a href="" class="comic-item">
+										<div class="comic-item-img">
+											<img src="images/image 43.png" alt="">
+										</div>
+										<div class="comic-item-detail">
+											<p class="comic-item-detail-name">Truyện dài Doremon full</p>
+											<p><span class="comic-item-detail-type">Truyện</span> - <span class="comic-item-detail-time">7h</span></p>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a href="" class="comic-item">
+										<div class="comic-item-img">
+											<img src="images/image 43.png" alt="">
+										</div>
+										<div class="comic-item-detail">
+											<p class="comic-item-detail-name">Truyện dài Doremon full asd ad ad á  á asd asd </p>
+											<p><span class="comic-item-detail-type">Truyện</span> - <span class="comic-item-detail-time">7h</span></p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+					  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="w-1140 bg-white mx-auto py-3 br-10 mt-lg-4 mt-3 px-3 px-lg-0 shadow">
+			<div class="w-1080 mx-auto">
+				<div class="">
+					<p class="fs-32 font-weight-bold text-orange d-block d-lg-none">Tác phẩm</p>
+					<div class="d-flex justify-content-between align-items-center bg-base mx-n3 mx-lg-0 px-sm-3 nav-custom overflow-auto ">
+						<p class="fs-32 font-weight-bold text-orange d-none d-lg-block">Tác phẩm</p>
+						<ul class="nav nav-pills mt-3 flex-nowrap" role="tablist">
+						  <li class="nav-item" role="presentation">
+							<a class="nav-link active" id="pills-home-tab2" data-toggle="pill" href="#pills-home2" aria-selected="true"><img class="img-white img-icon" src="images/icon/all-white.svg" alt=""> <img class="img-black img-icon" src="images/icon/all-black.svg" alt=""> Tất cả</a>
+						  </li>
+						  <li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-profile-tab2" data-toggle="pill" href="#pills-profile2" aria-selected="false"><img class="img-white img-icon" src="images/icon/new-white.svg" alt=""> <img class="img-black img-icon" src="images/icon/new-black.svg" alt="">Mới nhất</a>
+						  </li>
+						  <li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-contact-tab2" data-toggle="pill" href="#pills-contact2" role="tab" aria-controls="pills-contact" aria-selected="false"><img class="img-white img-icon" src="images/icon/care-white.svg" alt=""> <img class="img-black img-icon" src="images/icon/care-black.svg" alt="">Quan tâm nhất</a>
+						  </li>
+							<li class="nav-item">
+								<a class="dropdown-toggle nav-link border-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-icon" src="images/icon/type.svg" alt=""><span class="text-dark333">Thể loại</span></a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								  </div>
+							</li>
+							
+						</ul>
+					</div>
+					
+					<div class="tab-content" id="pills- tabContent2">
+					    <div class="tab-pane fade show active" id="pills-home2" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-6 col-lg-4">
+									<a href="" class="comic-item">
+										<div class="comic-item-img">
+											<div class="alphabet-item alphabet-item--bg">a</div>
+										</div>
+										<div class="comic-item-detail">
+											<p class="comic-item-detail-name">Truyện dài Doremon full</p>
+											<p><span class="comic-item-detail-type">Truyện</span> - <span class="comic-item-detail-time">7h</span></p>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a href="" class="comic-item">
+										<div class="comic-item-img">
+											<div class="alphabet-item alphabet-item--bg">a</div>
+										</div>
+										<div class="comic-item-detail">
+											<p class="comic-item-detail-name">Truyện dài Doremon full</p>
+											<p><span class="comic-item-detail-type">Truyện</span> - <span class="comic-item-detail-time">7h</span></p>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a href="" class="comic-item">
+										<div class="comic-item-img">
+											<div class="alphabet-item alphabet-item--bg">a</div>
+										</div>
+										<div class="comic-item-detail">
+											<p class="comic-item-detail-name">Truyện dài Doremon full</p>
+											<p><span class="comic-item-detail-type">Truyện</span> - <span class="comic-item-detail-time">7h</span></p>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-6 col-lg-4">
+									<a href="" class="comic-item">
+										<div class="comic-item-img">
+											<img src="images/image 43.png" alt="">
+										</div>
+										<div class="comic-item-detail">
+											<p class="comic-item-detail-name">Truyện dài Doremon full asd ad ad á  á asd asd </p>
+											<p><span class="comic-item-detail-type">Truyện</span> - <span class="comic-item-detail-time">7h</span></p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					  <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+					  <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="w-1080 mx-auto mt-4">
+			<div class="ads-pc d-none d-sm-block">
+				<img src="images/Intro.png" alt="">
+			</div>
+			<div class="ads-mb d-block d-sm-none">
+				<img src="images/Intro (1).png" alt="">
+			</div>
+		</div>
+	</div>
+	
+	
+	
+<!--<article class="bg-base pt-md-0 px-md-0 container-fluid position-relative"> -->
+  
+  <!--		<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>-->
+
+<footer>
+	<div class="w-1080 mx-auto align-items-center position-relative justify-content-between">
+        <div class="row align-items-center">
+            <div class="col-sm-5">
+                <a href="" class="logo-font text-center d-block text-sm-left">
+                    BÁCH KHOA THƯ VIỆN
+                </a>
+            </div>
+            <div class="col-sm-7">
+                <div class="d-flex align-items-center flex-wrap-reverse justify-content-center flex-sm-nowrap" >
+                    <form action="" class="d-flex search-form justify-content-between w-100">
+                        <input type="text" placeholder="Tìm kiếm" class="bg-transparent border-0">
+                        <button type="submit" class="btn search-form-btn"><i class="fas fa-search text-white"></i></button>
+                    </form>
+                    <div class="btn-icon-list d-flex pl-sm-1 py-4 py-sm-0">
+                        <button class="btn-icon">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="btn-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button class="btn-icon">
+                            <i class="fab fa-youtube"></i>
+                        </button>
+                        <button class="btn-icon">
+                            <i class="fas fa-user"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+	<div class="w-1080 mx-auto ">
+        <div class="footer-content">
+            <div class="row">
+                <div class="col-12 col-lg-5 pr-xl-0">
+                    <p class="fs-16 text-orange"><strong>Địa chỉ</strong></p>
+					<p>® Mọi hình thức sao chép thông tin, hình ảnh phải có sự đồng ý bằng văn bản. 
+						</p>
+					<p>Vui lòng dẫn “Bách khoa thư viện” khi phát hành lại thông tin từ website này.</p>
+                </div>
+                <div class="col-12 col-lg-4 pl-xl-4 pt-4 pt-sm-0">
+                    <p class="fs-16 text-orange"><strong>Liên hệ</strong></p>
+                    <p>Đường dây nóng: 0123 123 456</p>
+                    <p>Email: bandoc@bktv.vn</p>
+                </div>
+				<div class="col-12 col-lg-3">
+					<div class="text-right d-none d-lg-block">
+						<a href="" class="ml-3 text-dark333">Tất cả</a>
+						<a href="" class="ml-3 text-dark333">Mới nhất</a>
+						<a href="" class="ml-3 text-dark333">Quan tâm</a>
+					</div>
+					<div class="text-center text-lg-right pt-4 pt-sm-2">
+						<a href="" class="p-2 bg-transparent border rounded ml-2 fs-14 btn">Góp ý</a>
+						<a href="" class="p-2 bg-transparent border rounded ml-2 fs-14 btn">Quảng cáo</a>
+					</div>
+				</div>
+            </div>
+        </div>
+	</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	
+<script src="js/header.js"></script> 
+	
+	<script>
+		$('.media-slide').slick({
+		  centerMode: true,
+		  centerPadding: '30px',
+		  slidesToShow: 1,
+			infinite:false,
+			arrows: true,
+			prevArrow:'<button type="button" class="slick-prev slick-prev-custom slick-arrow"></button>',
+		 	  nextArrow:'<button type="button" class="slick-next slick-next-custom slick-arrow"></button>',
+		  
+		});
+	</script>
+ 
+
+<script>
+	$(document).ready(function(){
+    //when dropdown is clicked add class "open" to open the dropdown menu
+    $(".dropdown-list").click(function(){
+        $(this).siblings().removeClass("open");
+        $(this).toggleClass("open");
+    });
+    $(".show-menu-btn").click(function(){
+        $('.menu-mobile').addClass('open_nav_mb');
+    });
+    $(".hide-menu-btn").click(function(){
+        $('.menu-mobile').removeClass('open_nav_mb');
+    });
+    //when document is clicked and it's not in the dropdown, close menu
+    $(document).click(function(e){
+        if(!$(e.target).parents(".navigation").length){
+            $(".dropdown-list").removeClass("open");
+        }
+    });
+    $('.dropdown-list').on('click',function(){
+        $('.dropdown-list').removeClass('active-mobile');
+        $(this).addClass('active-mobile');
+    });
+});
+</script>
+	<script>
+            function buttonUp(){
+         var valux = $('.sb-search-input').val(); 
+            valux = $.trim(valux).length;
+            if(valux !== 0){
+                $('.sb-search-submit').css('z-index','99');
+            } else{
+                $('.sb-search-input').val(''); 
+                $('.sb-search-submit').css('z-index','-999');
+            }
+    }
+    
+    $(document).ready(function(){
+        var submitIcon = $('.sb-icon-search');
+        var submitInput = $('.sb-search-input');
+        var searchBox = $('.sb-search');
+        var isOpen = false;
+        
+        $(document).mouseup(function(){
+            if(isOpen == true){
+            submitInput.val('');
+            $('.sb-search-submit').css('z-index','-999');
+            submitIcon.click();
+            }
+        });
+        
+        submitIcon.mouseup(function(){
+            return false;
+        });
+        
+        searchBox.mouseup(function(){
+            return false;
+        });
+                
+        submitIcon.click(function(){
+            if(isOpen == false){
+                searchBox.addClass('sb-search-open');
+                isOpen = true;
+            } else {
+                searchBox.removeClass('sb-search-open');
+                isOpen = false;
+            }
+    });
+
+});
+    </script> 
+	
+<!--
+	<script>
+		$(document).ready(function() {
+$(window).scroll(function() {
+if ($(this).scrollTop() > 200) {
+$('#toTopBtn').fadeIn();
+} else {
+$('#toTopBtn').fadeOut();
+}
+});
+
+$('#toTopBtn').click(function() {
+$("html, body").animate({
+scrollTop: 0
+}, 3000);
+return false;
+});
+});
+	</script>
+-->
+</body>
+</html>
