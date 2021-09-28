@@ -1,23 +1,17 @@
-$(document).ready(function() {
-	$(".dropdown-list__icon").click(function() {
-		$(this).parents('.dropdown-list').siblings().removeClass("open");
-		$(this).parents('.dropdown-list').toggleClass("open");
-	});
-	$(".dropdown-list__iconMobile").click(function() {
-		$(this).parents('.dropdown-list').siblings().removeClass('open');
-		if($(this).parents('.dropdown-list').hasClass('open')) {
-			$(this).parents('.dropdown-list').removeClass('open');
-			$(this).children('i').removeClass('fa-minus');
-			$(this).children('i').addClass('fa-plus');
-		}else {
-			$(this).parents('.dropdown-list').addClass('open');
-			$(this).children('i').removeClass('fa-plus');
-			$(this).children('i').addClass('fa-minus');
-		}
-	});
+// show menu mobile
+$(document).ready(function () {
+  $(".show-menu-btn").click(function () {
+    $(".menu-mobile").toggleClass("open_nav_mb");
+  });
+  $(".hide-menu-btn").click(function () {
+    $(".menu-mobile").removeClass("open_nav_mb");
+  });
+  $(".dropdown-list").click(function () {
+    $(".dropdown-list").toggleClass("open");
+  });
 });
- 
- // thu vien anh dang tab
+// end show menu mobile
+// thu vien anh dang tab
 function openContent(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -39,36 +33,38 @@ function openContent(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
+function scrollTopFadeFixed() {
+  var footerDetail = document.getElementById("footer").offsetTop;
+  var scrollFixedBlock = document.getElementById("change-page");
+  window.onscroll = function () {
+    var currentScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    if (currentScroll > footerDetail - 1000) {
+      scrollFixedBlock.style.display = "none";
+      scrollFixedBlock.style.opacity = "0";
+    } else {
+      scrollFixedBlock.style.display = "block";
+      scrollFixedBlock.style.opacity = "1";
+    }
+  };
+}
 
-
-//slide 
- $('.carousel').carousel({
-    interval: false
-  });
-
-/* show-comment*/
-$(document).ready(function() {
-  $(".dropdown-iconComment").click(function() {
-    $(this).parents('.dropdown-comment').toggleClass("open");
-  });
-});
- 
-
-
-/* icon-fade*/
-$(window).scroll(function(){
-  var window_top = $(window).scrollTop();
-  var div_top = $('#tab_barscroll').offset().top;
-  var content_top = $('.intro-img2').offset().top;
-  var floating_bar_height = $(".floating-bar").height();
-
-  if(div_top - window_top<=0){
-      $(".floating-bar").addClass("sticked");
-
-      if(window_top  > content_top - floating_bar_height - 20){
-          $(".floating-bar").hide();
-      }else{
-          $(".floating-bar").show();
+function showMoreCmt() {
+  var getHeaderMoreContent = document.querySelectorAll(".cmt-content__header");
+  var output = getHeaderMoreContent.forEach(function (value) {
+    value.onclick = function (e) {
+      var spanContent = e.target.closest(".cmt-content__span");
+      if (spanContent) {
+        if (spanContent.nextElementSibling) {
+          spanContent.nextElementSibling.classList.toggle("show");
+        }
       }
-  }
-}); 
+    };
+  });
+}
+
+function start() {
+  scrollTopFadeFixed();
+  showMoreCmt();
+}
+start();
