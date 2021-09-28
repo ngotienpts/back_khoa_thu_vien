@@ -320,6 +320,7 @@
   }
   .article--bg {
     background-color: #fff;
+    padding: 0;
   }
   .article .list-news .card-news {
     margin-bottom: 20px;

@@ -206,7 +206,7 @@
             br-10
           ">
 				<div class="article article--bg d-flex justify-content-xl-end flex-wrap">
-					<div class="main-product">
+					<div class="main-product px-lg-0 px-3">
 						<p class="news-title fw-600 fs-32 mb-4 font-lato d-lg-block d-none">
 							Em tỉnh dậy trời xanh thành người lạ
 						</p>
@@ -990,6 +990,24 @@
 
 	<script src="./js/header.js"></script>
 	<script src="./js/main.js"></script>
+	<script>
+		function scrollTopFadeFixed() {
+			var footerDetail = document.getElementById("footer").offsetTop;
+			var scrollFixedBlock = document.getElementById("change-page");
+			window.onscroll = function () {
+				var currentScroll =
+					document.body.scrollTop || document.documentElement.scrollTop;
+				if (currentScroll > footerDetail - 1000) {
+					scrollFixedBlock.style.display = "none";
+					scrollFixedBlock.style.opacity = "0";
+				} else {
+					scrollFixedBlock.style.display = "block";
+					scrollFixedBlock.style.opacity = "1";
+				}
+			};
+		}
+		scrollTopFadeFixed();
+	</script>
 </body>
 
 </html>

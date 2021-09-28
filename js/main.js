@@ -33,22 +33,6 @@ function openContent(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-function scrollTopFadeFixed() {
-  var footerDetail = document.getElementById("footer").offsetTop;
-  var scrollFixedBlock = document.getElementById("change-page");
-  window.onscroll = function () {
-    var currentScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-    if (currentScroll > footerDetail - 1000) {
-      scrollFixedBlock.style.display = "none";
-      scrollFixedBlock.style.opacity = "0";
-    } else {
-      scrollFixedBlock.style.display = "block";
-      scrollFixedBlock.style.opacity = "1";
-    }
-  };
-}
-
 function showMoreCmt() {
   var getHeaderMoreContent = document.querySelectorAll(".cmt-content__header");
   var output = getHeaderMoreContent.forEach(function (value) {
@@ -64,7 +48,6 @@ function showMoreCmt() {
 }
 
 function start() {
-  scrollTopFadeFixed();
   showMoreCmt();
 }
 start();
