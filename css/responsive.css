@@ -160,7 +160,8 @@
   }
 
   .section-title {
-    padding: 29px 0 20px;
+    padding: 0 20px 20px;
+    margin: 20px 0;
   }
 
   .achievement .achievement-content {
@@ -291,6 +292,15 @@
   .cmt-content__header {
     align-items: flex-start !important;
   }
+  .main-product {
+    width: 100%;
+  }
+  .sidebar-item {
+    padding: 15px;
+  }
+  .coment-block1 {
+    background-color: #fffbf8;
+  }
 }
 @media (max-width: 769px) {
   .header {
@@ -303,6 +313,50 @@
     height: 60px !important;
     overflow: hidden;
     z-index: 10;
+  }
+  .detail-share {
+    order: 2;
+  }
+  .cate-same__title {
+    font-size: 20px;
+  }
+  .cate-same-list {
+    display: block;
+  }
+  .scroll-fixed__left {
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 5px;
+  }
+  .scroll-fixed__right {
+    justify-content: center;
+  }
+  .author-info {
+    padding: 1rem;
+  }
+  .author-avatar {
+    text-align: center;
+  }
+  .author-avatar img {
+    width: 100px;
+    height: 100px;
+  }
+  .author-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner__overlay {
+    transform: scale(3);
+    opacity: 0.8;
+  }
+  .popup-login-block {
+    width: 100%;
+  }
+  .popup-login__close {
+    top: 0;
+    right: 0;
+    background: transparent;
   }
 }
 @media (max-width: 571px) {

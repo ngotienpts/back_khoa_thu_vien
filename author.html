@@ -63,7 +63,7 @@
 						<button class="btn-icon">
 							<i class="fab fa-youtube"></i>
 						</button>
-						<button class="btn-icon">
+						<button class="btn-icon login">
 							<i class="fas fa-user"></i>
 						</button>
 					</div>
@@ -174,7 +174,7 @@
 								<button class="btn-icon">
 									<i class="fab fa-youtube"></i>
 								</button>
-								<button class="btn-icon">
+								<button class="btn-icon login">
 									<i class="fas fa-user"></i>
 								</button>
 							</div>
@@ -184,17 +184,91 @@
 			</div>
 		</div>
 	</header>
+	<!-- popup login -->
+	<section class="popup-login">
+		<div class="popup-login-block">
+			<div class=" bg-white mb-5 position-relative border-10">
+				<div class="popup-login__close position-absolute">
+					<img src="./images/close.svg" alt="">
+				</div>
+				<div class="popup-login__title line2 py-3 fs-20 font-lato text-orange fw-600 text-center">Đăng nhập để gửi
+					bài viết</div>
+				<div class="text-center text-dark333 font-arial pt-4 pb-3">Đăng nhập với social</div>
+				<div class="text-center mb-3 w-100 px-3">
+					<a href="#" class="btn btn-large w-100 btn-fb d-flex align-items-center justify-content-center">
+						<img src="./images/fb.png" alt="" style="width: 90px ;height: auto;">
+					</a>
+				</div>
+				<div class="text-center mb-3 px-3">
+					<a href="#"
+						class=" btn btn-large btn-gg border-error w-100 d-flex align-items-center justify-content-center">
+						<img src="./images/google.png" alt="" style="width: 80px ;height: auto;">
+					</a>
+				</div>
+				<div class="form-goup-t px-3">
+					<input type="checkbox" class="" id="" checked>
+					<label for="">Ghi nhớ tài khoản</label>
+				</div>
+				<div class="text-center mt-3 px-3">
+					<a href="#" class="btn btn-error border-error text-white w-100">Đăng nhập</a>
+				</div>
+				<div class="text-center mt-3 pb-4">Nếu chưa có tài khoản vui lòng <a href="#"
+						class="text-blue-3b text-decoration">Đăng
+						ký</a></div>
+			</div>
+			<div class=" bg-white position-relative py-lg-5 py-4 px-3 mx-lg-0 mx-3 border-10">
+				<div class="popup-login__close position-absolute">
+					<img src="./images/close.svg" alt="">
+				</div>
+				<div class="fs-20 font-lato text-orange fw-600 mb-4">Thông báo</div>
+				<div class="font-arial text-black">Bạn cần <a href="#" class="text-blue-3b text-decoration">đăng nhập </a>
+					để có thể tham
+					gia gửi bài viết</div>
+			</div>
+		</div>
+	</section>
+	<!-- end popup login -->
 	<div class="w-100 bg-base">
 		<div class="w-100 banner banner-index">
-			<div class="w-1080 mx-auto">
+			<div class="w-1080 mx-auto banner-content_text">
 				<div class="row justify-content-between align-items-center mx-0 mx-sm-n3">
 					<div class="col-12 col-lg-4 text-white">
 						<a href="" class="text-white fs-18 font-lato">Trang chủ \ <span>Tác giả</span></a>
 					</div>
 				</div>
 			</div>
+			<div class="banner__overlay"><img src="./images/bg.png" alt=""></div>
+			<div class="banner-gradient-hide"></div>
 		</div>
 		<div class="w-1140 bg-white mx-auto py-lg-3 py-0 br-10 mb-4 mt-lg-4 mt-0 px-lg-3 px-0 px-lg-0 shadow">
+			<!-- info -->
+			<div class="author-info bg-base d-lg-flex d-block align-items-center">
+				<div class="author-avatar mr-lg-4 mb-lg-0 mb-5 ">
+					<img src="./images/thutuong.jpg" alt="">
+				</div>
+				<div class="author-content">
+					<h1 class="author-content__title fs-24 font-lato text-gray-22 fw-600 mb-3 d-lg-block d-none">Hiếu Nguyễn
+					</h1>
+					<div class="author-list-info d-lg-flex d-block align-items-center">
+						<div class="author-list-item fs-14 text-dark333 font-arial mr-lg-4 mr-0">
+							<p class="mb-lg-2 d-flex align-items-center">Tác giả <span class="d-lg-none d-block mr-1">:</span>
+							</p>
+							<p><span class="fw-600">5</span> Điểm <span>&nbsp;&#8226;&nbsp;</span> <span
+									class="fw-600">15</span> Tác
+								phẩm</p>
+						</div>
+						<div class="text-center">
+							<a href="#"
+								class="btn btn-warn font-lato text-black border-warn mr-lg-4 mr-0 my-lg-0 my-3">Share</a>
+						</div>
+						<div class="text-center">
+							<a href="#" class="btn btn-error font-lato text-white border-error">Bạn có muốn chỉnh sửa thông
+								tin này không</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end info -->
 			<div class="
             w-1080
             mx-auto
@@ -205,257 +279,94 @@
             my-1
             br-10
           ">
-				<div class="article article--bg d-flex justify-content-xl-end flex-wrap">
-					<div class="main-product px-lg-0 px-3">
-						<p class="news-title fw-600 fs-32 mb-4 font-lato d-lg-block d-none">
-							Em tỉnh dậy trời xanh thành người lạ
-						</p>
-						<p class="news-title fw-600 fs-32 mb-4 font-open d-lg-none d-block">
-							Em tỉnh dậy trời xanh thành người lạ
-						</p>
-						<p class="news-desc font-arial fs-17 fw-600 mb-4 d-lg-block d-none">
-							Nguyễn Bình Phương là một thi sĩ giàu mơ mộng - những mơ mộng
-							không giống ai. Bài thơ “Thơ ngắn về em” là một minh chứng cho
-							trạng thái ấy.
-						</p>
-						<p class="news-desc font-loto fs-17 fw-600 mb-4 d-lg-none d-block">
-							Nguyễn Bình Phương là một thi sĩ giàu mơ mộng - những mơ mộng
-							không giống ai. Bài thơ “Thơ ngắn về em” là một minh chứng cho
-							trạng thái ấy.
-						</p>
-						<p class="news-author font-lato fs-15 mb-4 d-lg-flex align-items-center d-block">
-							<span class="author-name text-blue-3b font-weight-bold d-block">Nguyễn Bình Phương</span>
-							<span class="d-lg-block d-none">-</span>
-							<span class="text-gray-44 d-block mt-lg-0 mt-3">Thứ hai, 12/4/2021 11:07 (GMT+7)</span>
-						</p>
-						<div class="episole d-lg-flex flex-wrap mb-4  d-none">
-							<button class="active episole-button">tập 5</button>
-							<button class="episole-button">tập 6</button>
-							<button class="episole-button">tập 7</button>
-							<button class="
-                    episole-button
-                    d-flex
-                    text-nowrap
-                    align-items-center
-                    episole-button--font15
-                  ">
-								<img src="images/icon/Group 2710.svg" alt="" /><span class="text-orange px-2">35</span>
-								Yêu thích
-							</button>
-							<button class="episole-button text-primary episole-button--font15">
-								Tuyển tập thơ lạ
-							</button>
+				<div class="article article--bg">
+					<!-- author description -->
+					<div class="fs-17 font-arial text-gray-44 px-lg-0 px-3">Khánh Chi (1965 -), là nhà thơ, nhà báo và nhà
+						văn Việt Nam,
+						quê
+						ở Tuy Hoà, Phú Yên. Hội viên Hội nhà
+						văn Việt Nam. Hội viên Hội nhà văn TP. Hồ Chí Minh. Uỷ viên Hội đồng Thơ TP. Hồ Chí Minh. Ngoài thơ
+						văn, còn viết ký sự và chân dung báo chí.
+					</div>
+					<!-- end author description -->
+					<!-- new -->
+					<div class="mt-5 px-lg-0 px-3">
+						<p class="fs-32 font-weight-bold text-orange d-block d-lg-none">Tác phẩm</p>
+						<div
+							class="d-flex justify-content-between align-items-center bg-base mx-n3 mx-lg-0 px-sm-3 nav-custom overflow-auto ">
+							<p class="fs-32 font-weight-bold text-orange d-none d-lg-block">Tác phẩm</p>
+							<ul class="nav nav-pills mt-3 flex-nowrap" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a class="nav-link active" id="pills-home-tab3" data-toggle="pill" href="#pills-home3"
+										aria-selected="true"><img class="img-white img-icon" src="images/icon/all-white.svg"
+											alt=""> <img class="img-black img-icon" src="images/icon/all-black.svg" alt=""> Tất
+										cả</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="pills-profile-tab3" data-toggle="pill" href="#pills-profile3"
+										aria-selected="false"><img class="img-white img-icon" src="images/icon/new-white.svg"
+											alt=""> <img class="img-black img-icon" src="images/icon/new-black.svg" alt="">Mới
+										nhất</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="pills-contact-tab3" data-toggle="pill" href="#pills-contact3"
+										role="tab" aria-controls="pills-contact" aria-selected="false"><img
+											class="img-white img-icon" src="images/icon/care-white.svg" alt=""> <img
+											class="img-black img-icon" src="images/icon/care-black.svg" alt="">Quan tâm nhất</a>
+								</li>
+							</ul>
 						</div>
-						<div class="catalogue">
-							<button class="
-                    btn
-                    focus-none
-                    bg-transparent
-                    w-100
-                    d-flex
-                    justify-content-between
-                    px-0
-                    align-items-center
-                  " type="button" data-toggle="collapse" data-target="#catalogue" aria-expanded="false"
-								aria-controls="catalogue">
-								<span class="text-orange fs-20 font-weight-bold font-lato">Mục lục</span>
-								<span><i class="fas fa-chevron-down"></i></span>
-							</button>
-							<!-- muc luc -->
-							<div class="collapse border-top" id="catalogue">
-								<ul class="collapse-t-list">
-									<li class="collapse-t-item p-1 fs-17 font-loto">
-										<a href="#" class="text-dark333">Dàn ý phân tích bài thơ Tây Tiến</a>
-										<ul class="ml-lg-2">
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-										</ul>
-									</li>
-									<li class="collapse-t-item p-1 fs-17 font-loto">
-										<a href="#" class="text-dark333">Dàn ý phân tích bài thơ Tây Tiến</a>
-										<ul class="ml-lg-2">
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-										</ul>
-									</li>
-									<li class="collapse-t-item p-1 fs-17 font-loto">
-										<a href="#" class="text-dark333">Dàn ý phân tích bài thơ Tây Tiến</a>
-										<ul class="ml-lg-2">
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-											<li class="collapse-t-item p-1 fs-17">
-												<a href="#" class="text-dark666">Dàn ý phân tích bài thơ Tây Tiến</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
+
+						<div class="tab-content" id="pills- tabContent2">
+							<div class="tab-pane fade show active" id="pills-home3" role="tabpanel">
+								<div class="row">
+									<div class="col-sm-6 col-12">
+										<a href="" class="comic-item">
+											<div class="comic-item-img">
+												<img src="images/image 43.png" alt="">
+											</div>
+											<div class="comic-item-detail">
+												<p class="comic-item-detail-name">Truyện dài Doremon full</p>
+												<p><span class="comic-item-detail-type">Truyện</span> - <span
+														class="comic-item-detail-time">7h</span></p>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-6 col-12">
+										<a href="" class="comic-item">
+											<div class="comic-item-img">
+												<img src="images/image 43.png" alt="">
+											</div>
+											<div class="comic-item-detail">
+												<p class="comic-item-detail-name">Truyện dài Doremon full</p>
+												<p><span class="comic-item-detail-type">Truyện</span> - <span
+														class="comic-item-detail-time">7h</span></p>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-6 col-12">
+										<a href="" class="comic-item">
+											<div class="comic-item-img">
+												<img src="images/image 43.png" alt="">
+											</div>
+											<div class="comic-item-detail">
+												<p class="comic-item-detail-name">Truyện dài Doremon full</p>
+												<p><span class="comic-item-detail-type">Truyện</span> - <span
+														class="comic-item-detail-time">7h</span></p>
+											</div>
+										</a>
+									</div>
+								</div>
 							</div>
-							<!-- end muc luc -->
-						</div>
-						<div class="episole d-lg-none d-flex flex-wrap my-4  ">
-							<div>
-								<button class="active episole-button">tập 5</button>
-								<button class="episole-button">tập 6</button>
-								<button class="episole-button">tập 7</button>
-							</div>
-							<div class="d-flex align-items-center">
-								<button class="
-																			episole-button
-																			d-flex
-																			text-nowrap
-																			align-items-center
-																			episole-button--font15
-																	">
-									<img src="images/icon/Group 2710.svg" alt="" /><span
-										class="text-orange px-2">35</span>
-									Yêu thích
-								</button>
-								<button class="episole-button text-primary episole-button--font15">
-									Tuyển tập thơ lạ
-								</button>
-							</div>
-						</div>
-						<!-- content -->
-						<div class="detail-content my-4">
-							<figure class="expNoEdit">
-								<img src="./images/Rectangle 179.png" />
-							</figure>
-							<p class="fs-17 font-loto text-dark333">
-								Thắp lửa lên bỗng thấy xa vời
-							</p>
-							<p class="fs-17 font-loto text-dark333">
-								Em là ngọn nến nhỏ sáng dần đôi môi tôi
-							</p>
-							<p class="fs-17 font-loto text-dark333">
-								Yêu có nghĩa vừa bay vừa nghĩ ngợi
-							</p>
-							<p class="fs-17 font-loto text-dark333">Tóc ngắn mắt buồn</p>
-							<p class="fs-17 font-loto text-dark333">
-								Mơ những điều không ai mơ
-							</p>
-							<p class="fs-17 font-loto text-dark333">
-								Sông đã chảy sang bên kia giấc ngủ
-							</p>
-							<p class="fs-17 font-loto text-dark333">
-								Em tỉnh dậy trời xanh thành người lạ
-							</p>
-							<p class="fs-17 font-loto text-dark333">Em lật bàn tay</p>
-							<p class="fs-17 font-loto text-dark333">Biển ùa vào</p>
-							<p class="fs-17 font-loto text-dark333">
-								Rất nhiều ngôi sao lung linh trên sóng
-							</p>
-							<p class="fs-17 font-loto text-dark333">
-								Nhiều thơ tôi trộn lẫn với hoa vàng
-							</p>
-							<p class="fs-17 font-loto text-dark333">Xa xôi mênh mông…</p>
-							<blockquote style="
-                    display: block;
-                    width: 100%;
-                    background: #eeeeee;
-                    border: none;
-                    text-align: justify;
-                    padding: 8px 2%;
-                    margin: 0px auto;
-                    font-size: 13px;
-                    line-height: 18px;
-                  ">
-								<p>Lời bình</p>
-								<p>
-									Trong đó, có 03 trường hợp là F1 liên quan ổ dịch tại xã
-									Long Phú (thị xã Long Mỹ).
-								</p>
-								<p>
-									04 trường hợp là người về từ ngoài tỉnh, gồm 01 trường hợp
-									về từ TP Hồ Chí Minh, 03 trường hợp đi bằng tàu từ An Giang
-									về Cà Mau ngang qua địa phận tỉnh Hậu Giang, dừng khai báo
-									tại chốt kiểm soát đường thủy tại huyện Châu Thành A, được
-									xét nghiệm và có kết quả dương tính.
-								</p>
-								<p>
-									Tính từ đầu đợt dịch (ngày 08/7) đến nay tỉnh Hậu Giang đã
-									ghi nhận tổng số 535 ca mắc (đã được Bộ Y tế công bố 521
-									ca).&nbsp;Tổng số ca được điều trị khỏi lũy kế: 461 ca.
-								</p>
-								<p>
-									Tổng số người đã được tiêm vắc xin 116.980 người (trong đó
-									có 44.467 người đã tiêm đủ 2 mũi; 72.513 người mới tiêm mũi
-									1), đạt tỷ lệ 21,82% trên tổng dân số tỉnh Hậu Giang từ 18
-									tuổi trở lên nằm trong độ tuổi tiêm chủng (536.163 người).
-								</p>
-							</blockquote>
-						</div>
-						<!-- end content -->
-						<div class="episole d-lg-flex d-none flex-wrap">
-							<button class="active episole-button">tập 5</button>
-							<button class="episole-button">tập 6</button>
-							<button class="episole-button">tập 7</button>
-							<button class="
-                    episole-button
-                    d-flex
-                    text-nowrap
-                    align-items-center
-                    episole-button--font15
-                  ">
-								<img src="images/icon/Group 2710.svg" alt="" /><span class="text-orange px-2">35</span>
-								Yêu thích
-							</button>
-							<button class="episole-button text-primary episole-button--font15">
-								Tuyển tập thơ lạ
-							</button>
-						</div>
-						<div class="episole d-lg-none d-flex flex-wrap my-4  ">
-							<div>
-								<button class="active episole-button">tập 5</button>
-								<button class="episole-button">tập 6</button>
-								<button class="episole-button">tập 7</button>
-							</div>
-							<div class="d-flex align-items-center">
-								<button class="
-																			episole-button
-																			d-flex
-																			text-nowrap
-																			align-items-center
-																			episole-button--font15
-																	">
-									<img src="images/icon/Group 2710.svg" alt="" /><span
-										class="text-orange px-2">35</span>
-									Yêu thích
-								</button>
-								<button class="episole-button text-primary episole-button--font15">
-									Tuyển tập thơ lạ
-								</button>
-							</div>
+							<div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile-tab">
+								...</div>
+							<div class="tab-pane fade" id="pills-contact3" role="tabpanel" aria-labelledby="pills-contact-tab">
+								...</div>
 						</div>
 					</div>
+					<!-- end new -->
 					<!-- cmt -->
-					<div class="coment-block my-lg-4 mt-4">
+					<div class="coment-block1 my-lg-4 mt-4">
 						<div class="line2 pb-4">
 							<div class="comment mt-4 d-flex">
 								<div class="cmt-avatar">
@@ -463,49 +374,49 @@
 								</div>
 								<div class="cmt-content pl-lg-3 pl-2">
 									<div class="
-                        cmt-content__header
-                        d-flex
-                        align-items-center
-                        justify-content-between
-                      ">
+							cmt-content__header
+							d-flex
+							align-items-center
+							justify-content-between
+						 ">
 										<div class="d-lg-flex d-block align-items-center">
 											<div class="
-                            cmt-content__title
-                            fs-14
-                            font-arial
-                            text-black
-                            fw-600
-                            mr-5
-                          ">
+								 cmt-content__title
+								 fs-14
+								 font-arial
+								 text-black
+								 fw-600
+								 mr-5
+							  ">
 												Tuấn anh nguyễn
 											</div>
 											<div class="
-                            cmt-content__intro
-                            fs-12
-                            text-gray-77
-                            d-flex
-                            align-items-center
-                          ">
+								 cmt-content__intro
+								 fs-12
+								 text-gray-77
+								 d-flex
+								 align-items-center
+							  ">
 												<span class="cmt-content__day mr-3">15/11/2021</span>
 												<span class="cmt-content__time mr-3">10:30</span>
 												<span class="
-                              cmt-content__rep
-                              d-flex
-                              align-items-center
-                              mr-3
-                            "><img src="./images/rep.svg" alt="" />Trả lời</span>
+									cmt-content__rep
+									d-flex
+									align-items-center
+									mr-3
+								 "><img src="./images/rep.svg" alt="" />Trả lời</span>
 												<span class="
-                              cmt-content__like
-                              d-flex
-                              align-items-center
-                              mr-3
-                            "><img src="./images/likeg.svg" alt="" />9</span>
+									cmt-content__like
+									d-flex
+									align-items-center
+									mr-3
+								 "><img src="./images/likeg.svg" alt="" />9</span>
 												<span class="
-                              cmt-content__unlike
-                              d-flex
-                              align-items-center
-                              mr-3
-                            "><img src="./images/unlike.svg" alt="" />9</span>
+									cmt-content__unlike
+									d-flex
+									align-items-center
+									mr-3
+								 "><img src="./images/unlike.svg" alt="" />9</span>
 											</div>
 										</div>
 										<div class="cmt-content__more position-relative">
@@ -524,12 +435,12 @@
 										</div>
 									</div>
 									<p class="
-                        cmt-content__text
-                        font-arial
-                        fs-14
-                        text-gray-44
-                        mt-2
-                      ">
+							cmt-content__text
+							font-arial
+							fs-14
+							text-gray-44
+							mt-2
+						 ">
 										Rất nhiều công trình trọng điểm do nhà thầu Trung Quốc thi
 										công gặp rất nhiều trục trặc về tiến độ, đội vốn .. nhưng
 										Trung Quốc vẫn luôn thắng thầu ở những dự án quan trọng
@@ -545,50 +456,50 @@
 									</div>
 									<div class="cmt-content pl-lg-3 pl-2">
 										<div class="
-                          cmt-content__header
-                          d-flex
-                          align-items-center
-                          justify-content-between
-                        ">
+							  cmt-content__header
+							  d-flex
+							  align-items-center
+							  justify-content-between
+							">
 											<div class="d-lg-flex d-block align-items-center">
 												<div class="
-                              cmt-content__title
-                              fs-14
-                              font-arial
-                              text-black
-                              fw-600
-                              mr-5
-                            ">
+									cmt-content__title
+									fs-14
+									font-arial
+									text-black
+									fw-600
+									mr-5
+								 ">
 													Tuấn anh nguyễn
 												</div>
 												<div class="
-                              cmt-content__intro
-                              fs-12
-                              text-gray-77
-                              d-flex
-                              align-items-center
-                            ">
+									cmt-content__intro
+									fs-12
+									text-gray-77
+									d-flex
+									align-items-center
+								 ">
 													<span class="cmt-content__day mr-3">15/11/2021</span>
 													<span class="cmt-content__time mr-3">10:30</span>
 													<span class="
-                                cmt-content__rep
-                                d-flex
-                                align-items-center
-                                mr-3
-                              "><img src="./images/rep.svg" alt="" />Trả
+									  cmt-content__rep
+									  d-flex
+									  align-items-center
+									  mr-3
+									"><img src="./images/rep.svg" alt="" />Trả
 														lời</span>
 													<span class="
-                                cmt-content__like
-                                d-flex
-                                align-items-center
-                                mr-3
-                              "><img src="./images/likeg.svg" alt="" />9</span>
+									  cmt-content__like
+									  d-flex
+									  align-items-center
+									  mr-3
+									"><img src="./images/likeg.svg" alt="" />9</span>
 													<span class="
-                                cmt-content__unlike
-                                d-flex
-                                align-items-center
-                                mr-3
-                              "><img src="./images/unlike.svg" alt="" />9</span>
+									  cmt-content__unlike
+									  d-flex
+									  align-items-center
+									  mr-3
+									"><img src="./images/unlike.svg" alt="" />9</span>
 												</div>
 											</div>
 											<div class="cmt-content__more position-relative">
@@ -607,12 +518,12 @@
 											</div>
 										</div>
 										<p class="
-                          cmt-content__text
-                          font-arial
-                          fs-14
-                          text-gray-44
-                          mt-2
-                        ">
+							  cmt-content__text
+							  font-arial
+							  fs-14
+							  text-gray-44
+							  mt-2
+							">
 											Rất nhiều công trình trọng điểm do nhà thầu Trung Quốc
 											thi công gặp rất nhiều trục trặc về tiến độ, đội vốn ..
 											nhưng Trung Quốc vẫn luôn thắng thầu ở những dự án quan
@@ -664,91 +575,6 @@
 						</div>
 					</div>
 					<!-- end cmt -->
-					<!-- taglist -->
-					<div class="w-100 px-lg-0 px-3 d-flex flex-column">
-						<div class="d-flex detail-share mb-lg-0 mb-3">
-							<button class="border-0 pr-2 bg-white">
-								<img src="images/icon/fb-share-button.svg" alt="" />
-							</button>
-							<button class="border-0 pr-2 bg-white">
-								<img src="images/icon/like-fb.svg" alt="" />
-							</button>
-							<button class="border-0 pr-2 bg-white d-none d-xl-flex">
-								<img src="images/icon/Twiter-btn.svg" alt="" />
-							</button>
-							<button class="border-0 pr-2 bg-white d-none d-xl-flex">
-								<img src="images/icon/zalo-btn.svg" alt="" />
-							</button>
-						</div>
-						<div class="detail-tag">
-							<ul class="tag-list d-flex flex-wrap tag-list-t">
-								<span class="tag-title"><i class="fa fa-tags" aria-hidden="true"></i> Tags:</span>
-								<li>
-									<a href="" class="active">#asd ád</a>
-								</li>
-								<li class="">
-									<a href="">asd sssád</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- tag-list -->
-					<!-- cung the loai -->
-					<div class="w-100 cate-same bg-beige-ff p-3 m-lg-0 m-3">
-						<span class="cate-same__title fs-26 font-weight-bold font-lato"><a href="#"
-								class="text-orange">Cùng thể loại</a></span>
-						<div class="cate-same-list">
-							<div class="cate-same__item">
-								<a href="" class="comic-item">
-									<div class="comic-item-img">
-										<img src="images/image 43.png" alt="" />
-									</div>
-									<div class="comic-item-detail">
-										<p class="comic-item-detail-name">
-											Truyện dài Doremon full
-										</p>
-										<p>
-											<span class="comic-item-detail-type">Truyện</span> -
-											<span class="comic-item-detail-time">7h</span>
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="cate-same__item">
-								<a href="" class="comic-item">
-									<div class="comic-item-img">
-										<img src="images/image 43.png" alt="" />
-									</div>
-									<div class="comic-item-detail">
-										<p class="comic-item-detail-name">
-											Truyện dài Doremon full
-										</p>
-										<p>
-											<span class="comic-item-detail-type">Truyện</span> -
-											<span class="comic-item-detail-time">7h</span>
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="cate-same__item">
-								<a href="" class="comic-item">
-									<div class="comic-item-img">
-										<img src="images/image 43.png" alt="" />
-									</div>
-									<div class="comic-item-detail">
-										<p class="comic-item-detail-name">
-											Truyện dài Doremon full
-										</p>
-										<p>
-											<span class="comic-item-detail-type">Truyện</span> -
-											<span class="comic-item-detail-time">7h</span>
-										</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- end cung the loai -->
 				</div>
 				<div class="sidebar bg-white">
 					<div class="sidebar-item bg-lightblue">
@@ -868,35 +694,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="scroll-fixed-block bg-white" id="change-page">
-		<div class="
-          scroll-fixed
-          w-1080
-          mx-auto
-          d-lg-flex d-block
-          align-items-center
-          justify-content-between
-        ">
-			<div class="
-            scroll-fixed__left
-            d-flex
-            align-items-center
-            fs-14
-            font-lato
-            text-dark333
-          ">
-				<img src="./images/mouse.svg" alt="" class="mr-4" />Cuộn xuống xem
-				tiếp
-			</div>
-			<div class="scroll-fixed__right d-flex align-items-center">
-				<a href="#" class="scroll-fixed__linkfb"><img src="./images/fbe5.svg" alt="" /></a>
-				<a href="#" class="scroll-fixed__linktwitter"><img src="./images/twittere5.svg" alt="" /></a>
-				<span class="scroll-fixed__text text-dark33 font-weight-bold font-lato">Tập 1/3</span>
-				<span class="scroll-fixed__prev active"><img src="./images/arown-left.svg" alt="" /></span>
-				<span class="scroll-fixed__next"><img src="./images/arown-right.svg" alt="" /></span>
-			</div>
-		</div>
-	</div>
+
 	<footer id="footer">
 		<div class="
           w-1080
@@ -935,7 +733,7 @@
 							<button class="btn-icon">
 								<i class="fab fa-youtube"></i>
 							</button>
-							<button class="btn-icon">
+							<button class="btn-icon login">
 								<i class="fas fa-user"></i>
 							</button>
 						</div>
@@ -990,23 +788,6 @@
 
 	<script src="./js/header.js"></script>
 	<script src="./js/main.js"></script>
-	<script>
-		function scrollTopFadeFixed() {
-			var footerDetail = document.getElementById("footer");
-			var scrollFixedBlock = document.getElementById("change-page");
-			window.onscroll = function () {
-				var currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
-				if (currentScroll + (screen.height - scrollFixedBlock.offsetHeight) > footerDetail.offsetTop) {
-					scrollFixedBlock.style.display = "none";
-					scrollFixedBlock.style.opacity = "0";
-				} else {
-					scrollFixedBlock.style.display = "block";
-					scrollFixedBlock.style.opacity = "1";
-				}
-			};
-		}
-		scrollTopFadeFixed();
-	</script>
 </body>
 
 </html>

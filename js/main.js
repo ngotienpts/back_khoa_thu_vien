@@ -35,7 +35,7 @@ function openContent(evt, cityName) {
 
 function showMoreCmt() {
   var getHeaderMoreContent = document.querySelectorAll(".cmt-content__header");
-  var output = getHeaderMoreContent.forEach(function (value) {
+  getHeaderMoreContent.forEach(function (value) {
     value.onclick = function (e) {
       var spanContent = e.target.closest(".cmt-content__span");
       if (spanContent) {
@@ -47,7 +47,34 @@ function showMoreCmt() {
   });
 }
 
+function showPopupLogin() {
+  var getUserIcon = document.querySelectorAll(".login");
+  var closePopupLogin = document.querySelectorAll(".popup-login__close ");
+  var showPopup = document.querySelector(".popup-login");
+
+  getUserIcon.forEach(function (el) {
+    el.onclick = function () {
+      if (showPopup) {
+        if (showPopup.classList.contains("open")) {
+          showPopup.classList.remove("open");
+        } else {
+          showPopup.classList.add("open");
+        }
+      }
+    };
+  });
+
+  closePopupLogin.forEach(function (clo) {
+    clo.onclick = function () {
+      if (showPopup) {
+        showPopup.classList.remove("open");
+      }
+    };
+  });
+}
+
 function start() {
   showMoreCmt();
+  showPopupLogin();
 }
 start();
