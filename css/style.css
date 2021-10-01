@@ -1331,3 +1331,6 @@ footer {
 .info-text {
   flex: 1;
 }
+.collapse-menu-list.open {
+  display: block;
+}

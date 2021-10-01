@@ -73,8 +73,17 @@ function showPopupLogin() {
   });
 }
 
+function showMenu() {
+  var getheaderMenu = document.querySelector(".collapse-menu");
+  getheaderMenu.onclick = function () {
+    var showMenuList = document.querySelector(".collapse-menu-list");
+    showMenuList.classList.toggle("open");
+  };
+}
+
 function start() {
   showMoreCmt();
   showPopupLogin();
+  showMenu();
 }
 start();
